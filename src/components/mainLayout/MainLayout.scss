@@ -1,0 +1,24 @@
+$primary-color: #2d5678;
+$primary-color-variant: #1e71b4;
+$primary-color-dark: #15212c;
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.mainlayout-container {
+  padding: 0;
+  color: $primary-color-variant;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.content {
+  line-height: 30px;
+}
+.header {
+  font-weight: bold;
+}

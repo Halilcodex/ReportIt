@@ -1,0 +1,11 @@
+@import "../../components/mainLayout/MainLayout.scss";
+
+.about-container {
+  .navbar {
+    // padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    background-color: $primary-color-dark;
+  }
+}

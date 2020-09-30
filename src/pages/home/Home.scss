@@ -168,8 +168,10 @@
   .social-media {
     display: flex;
     justify-content: center;
+    .instagram {
+      margin: 0 10%;
+    }
     svg {
-      margin-right: 10%;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }

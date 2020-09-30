@@ -276,7 +276,7 @@ function Home() {
       </section>
       <section className="social-media">
         <FacebookIcon fontSize="large" />
-        <InstagramIcon fontSize="large" />
+        <InstagramIcon className="instagram" fontSize="large" />
         <TwitterIcon fontSize="large" />
       </section>
       <section className="footer">

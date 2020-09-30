@@ -1,0 +1,49 @@
+@import "../../components/mainLayout/MainLayout.scss";
+
+#toolTip {
+  position: relative;
+}
+
+#toolTip h4 {
+  padding: 20px;
+  background-color: $primary-color-dark;
+  border: solid 1px #a0c7ff;
+  -moz-border-radius: 5px;
+  -ie-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#tailShadow {
+  position: absolute;
+  bottom: -8px;
+  left: 50.6%;
+  width: 0;
+  height: 0;
+  border: solid 2px #fff;
+  box-shadow: 0 0 10px 1px #555;
+}
+
+#tail1 {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-color: #a0c7ff transparent transparent transparent;
+  border-width: 10px;
+  border-style: solid;
+}
+
+#tail2 {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-color: $primary-color-dark transparent transparent transparent;
+  border-width: 10px;
+  border-style: solid;
+}

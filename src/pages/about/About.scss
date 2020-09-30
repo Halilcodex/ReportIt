@@ -26,9 +26,10 @@
     text-align: justify;
     width: 100%;
     p {
-      width: 700px;
+      // width: 700px;
       margin: 0 auto;
       padding: 20px 0;
+      max-width: 700px;
       span {
         font-size: larger;
         font-weight: bold;
@@ -38,7 +39,8 @@
 
   .objectives {
     text-align: center;
-    background-color: bisque;
+    // background-color: bisque;
+    background-color: #c1beb5;
     padding: 50px;
     ul {
       margin-top: 40px;
@@ -68,12 +70,59 @@
   }
 
   .the-team {
+    margin-bottom: 0;
     .header {
       text-align: center;
       width: 100%;
       background-color: $primary-color-dark;
       padding: 20px;
       color: white;
+      margin-bottom: unset;
     }
+
+    .team-members div:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+
+    .team-members {
+      .member-container {
+        height: 500px;
+        padding-top: 30px;
+        background: rgb(238, 240, 244);
+        background: radial-gradient(
+          circle,
+          rgba(238, 240, 244, 1) 0%,
+          rgba(167, 165, 177, 1) 100%
+        );
+        display: flex;
+        justify-content: center;
+        .member-image {
+          width: 300px;
+        }
+        .member-profile {
+          padding: 50px;
+          width: 500px;
+          text-align: justify;
+          .name {
+            color: #4f5356;
+            text-transform: uppercase;
+          }
+          .role {
+            color: $primary-color-dark;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin: unset;
+    margin-top: auto;
+    padding: 7px;
+    font-size: 13px;
+    text-align: center;
+    background-color: $primary-color-variant;
+    color: #fff;
   }
 }

@@ -7,12 +7,13 @@
 #toolTip h4 {
   padding: 20px;
   background-color: $primary-color-dark;
-  border: solid 1px #a0c7ff;
-  -moz-border-radius: 5px;
-  -ie-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  border-top: solid 1px #a0c7ff;
+  border-bottom: solid 1px #a0c7ff;
+  //   -moz-border-radius: 5px;
+  //   -ie-border-radius: 5px;
+  //   -webkit-border-radius: 5px;
+  //   -o-border-radius: 5px;
+  //   border-radius: 5px;
   color: white;
 }
 

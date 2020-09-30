@@ -187,9 +187,9 @@ function Home() {
             width="450"
             height="300"
             src="https://www.youtube.com/embed/bpxvWj6HLZ4"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
             className="video-story"
             title="no-to-rape"
           ></iframe>
@@ -197,9 +197,9 @@ function Home() {
             width="450"
             height="300"
             src="https://www.youtube.com/embed/yTRf7BGYl8A"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
             className="video-story"
             title="say-no"
           ></iframe>
@@ -207,9 +207,9 @@ function Home() {
             width="450"
             height="300"
             src="https://www.youtube.com/embed/bpxvWj6HLZ4"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
             className="video-story"
             title="no-to-rape"
           ></iframe>
@@ -260,10 +260,18 @@ function Home() {
         <hr />
         <hr className="right" />
         <div className="links-content">
-          <Link className="footer-link">About Us</Link>
-          <Link className="footer-link">Privacy Policy</Link>
-          <Link className="footer-link">Terms</Link>
-          <Link className="footer-link">Contact Support</Link>
+          <Link className="footer-link" to="/about">
+            About Us
+          </Link>
+          <Link className="footer-link" to="#">
+            Privacy Policy
+          </Link>
+          <Link className="footer-link" to="#">
+            Terms
+          </Link>
+          <Link className="footer-link" to="#">
+            Contact Support
+          </Link>
         </div>
       </section>
       <section className="social-media">

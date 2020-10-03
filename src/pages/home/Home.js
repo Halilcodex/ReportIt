@@ -4,6 +4,7 @@ import { Button, Divider, AccordionDetails } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import MuiAccordion from "@material-ui/core/Accordion";
 import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
+import Footer from "../../components/footer/Footer";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
@@ -19,6 +20,7 @@ import graphIcon from "../../assets/icons8-graph.png";
 import privacyIcon from "../../assets/icons8-privacy.png";
 import timeIcon from "../../assets/icons8-time.png";
 import lagosLogo from "../../assets/lagos-state-coat-of-arm.jpg";
+import mic from "../../assets/mic.png";
 import "./Home.scss";
 
 const Accordion = withStyles({
@@ -44,14 +46,14 @@ function Home() {
         className="carousel-container"
         autoPlay
         animation="slide"
-        interval={4000}
+        interval={5000}
         indicators={false}
         timeout={1000}
         // navButtonsAlwaysVisible={true}
       >
         <div className="item item-1">
           <div className="logo-and-text">
-            <img src={logo} alt="reportit-logo" width="180" height="200" />
+            <img className="logo" src={mic} alt="reportit-logo" />
             <h3 className="header">I WILL REMAIN SILENT NO MORE</h3>
             <p className="content">
               Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex ius
@@ -80,7 +82,8 @@ function Home() {
           style={{ backgroundImage: `url(${cuffsPic})` }}
         >
           <div className="logo-and-text">
-            <img src={logo} alt="reportit-logo" width="180" height="200" />
+            <img className="logo" src={mic} alt="reportit-logo" />
+            {/* <img src={logo} alt="reportit-logo" width="180" height="200" /> */}
             <h3 className="header">I WILL REMAIN SILENT NO MORE</h3>
             <p className="content">
               Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex ius
@@ -105,7 +108,8 @@ function Home() {
             className="item-image"
           />
           <div className="logo-and-text">
-            <img src={logo} alt="reportit-logo" width="180" height="200" />
+            <img className="logo" src={mic} alt="reportit-logo" />
+            {/* <img src={logo} alt="reportit-logo" width="180" height="200" /> */}
             <h3 className="header">I WILL REMAIN SILENT NO MORE</h3>
             <p className="content">
               Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex ius
@@ -279,9 +283,7 @@ function Home() {
         <InstagramIcon className="instagram" fontSize="large" />
         <TwitterIcon fontSize="large" />
       </section>
-      <section className="footer">
-        © 2020 Copyright | All rights reserved
-      </section>
+      <Footer />
     </div>
   );
 }

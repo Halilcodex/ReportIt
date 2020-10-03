@@ -8,6 +8,7 @@ import people2 from "../../assets/about/people2.png";
 import people3 from "../../assets/about/people3.png";
 import people4 from "../../assets/about/people4.png";
 import people5 from "../../assets/about/people5.png";
+import Footer from "../../components/footer/Footer";
 
 function About() {
   const peopleList = [
@@ -96,9 +97,7 @@ function About() {
           ))}
         </div>
       </section>
-      <section className="footer">
-        © 2020 Copyright | All rights reserved
-      </section>
+      <Footer />
     </div>
   );
 }

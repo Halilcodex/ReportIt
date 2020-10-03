@@ -21,6 +21,10 @@
         opacity: 80%;
       }
       .logo-and-text {
+        .logo {
+          width: 50px;
+          margin: 50px;
+        }
         max-width: 500px;
         text-align: justify;
         h3,
@@ -175,14 +179,5 @@
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
-  }
-
-  .footer {
-    margin-top: auto;
-    padding: 7px;
-    font-size: 13px;
-    text-align: center;
-    background-color: $primary-color-variant;
-    color: #fff;
   }
 }

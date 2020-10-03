@@ -1,0 +1,43 @@
+@import "../../components/mainLayout/MainLayout.scss";
+
+.footer {
+  margin: unset;
+  margin-top: auto;
+  padding: 7px;
+  font-size: 13px;
+  text-align: center;
+  background-color: $primary-color-variant;
+  color: #fff;
+  position: relative;
+
+  .back-to-top {
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    color: white;
+
+    svg {
+      background-color: $primary-color-dark;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  a:hover {
+    text-decoration: none;
+    color: $primary-color-variant;
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+    margin-right: 10px;
+    color: $primary-color-dark;
+  }
+
+  .nysc-logo {
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+}

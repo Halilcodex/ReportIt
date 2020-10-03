@@ -22,6 +22,7 @@ function MainLayout(props) {
 
   return (
     <div className="mainlayout-container">
+      <a name="top"></a>
       <div className="navigation">
         <nav className="navbar navbar-light">
           <a className="navbar-brand" href="/">

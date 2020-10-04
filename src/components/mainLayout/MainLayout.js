@@ -39,8 +39,8 @@ function MainLayout(props) {
               Dashboard
             </a>
             <a
-              className={`nav-link ${getActive("report-it") && "active"}`}
-              href="/"
+              className={`nav-link ${getActive("reporting") && "active"}`}
+              href="/reporting"
             >
               Report It
             </a>

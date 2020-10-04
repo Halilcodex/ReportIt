@@ -4,6 +4,7 @@ import MainLayout from "./components/mainLayout/MainLayout";
 import About from "./pages/about/About";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Home from "./pages/home/Home";
+import Reporting from "./pages/reporting/Reporting";
 
 function RouterMain() {
   return (
@@ -16,6 +17,7 @@ function RouterMain() {
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/reporting" component={Reporting} />
             </MainLayout>
           )}
         />

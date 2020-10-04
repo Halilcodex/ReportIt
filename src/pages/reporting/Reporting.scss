@@ -1,0 +1,18 @@
+@import "../../components/mainLayout/MainLayout.scss";
+
+.reporting-container {
+  .header-card {
+    .card-footer {
+      .btn {
+        padding: 1rem 1.5rem;
+      }
+      .btn-victim {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .multi-step-form {
+    margin: 100px 0;
+  }
+}

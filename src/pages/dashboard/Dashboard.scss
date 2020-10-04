@@ -1,7 +1,7 @@
 @import "../../components/mainLayout/MainLayout.scss";
 
 .mainlayout-container {
-  background-color: #f3f3f3;
+  // background-color: #f3f3f3;
 }
 .dashboard-container {
   position: relative;
@@ -28,14 +28,19 @@
     }
   }
 
+  section {
+    left: 0;
+    right: 0;
+    width: 70vw;
+  }
+
   .summary-card {
     position: absolute;
     top: 320px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 70px;
-    left: 300px;
-    // margin: 0 80px;
+    margin: auto;
     h4 {
       color: #000000;
       font-weight: bold;
@@ -63,6 +68,21 @@
 
     .card-2 {
       text-align: center;
+      width: 300px;
     }
+  }
+
+  .graph-1 {
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 170px;
+  }
+
+  .graph-2 {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 40px;
+    margin: 40px auto;
   }
 }

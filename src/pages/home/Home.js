@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-material-ui-carousel";
 import { Button, Divider, AccordionDetails } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
@@ -40,93 +40,177 @@ const AccordionSummary = withStyles({
 })(MuiAccordionSummary);
 
 function Home() {
+  const [screenSize] = useState(window.screen.width);
   return (
     <div className="home-container">
-      <Carousel
-        className="carousel-container"
-        autoPlay
-        animation="slide"
-        interval={5000}
-        indicators={false}
-        timeout={1000}
-        // navButtonsAlwaysVisible={true}
-      >
-        <div className="item item-1">
-          <div className="logo-and-text">
-            <img className="logo" src={mic} alt="reportit-logo" />
-            <h3 className="header">I WILL REMAIN SILENT NO MORE</h3>
-            <p className="content">
-              Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex ius
-              volumus propriae democritum, magna adolescens et mei, ne sit dicit
-              intellegat. At novum patrioque conceptam his, perfecto accusata
-              honestatis no qui.
-            </p>
-            <Button
-              className="reportit-button"
-              variant="contained"
-              color="primary"
-            >
-              Report It
-            </Button>
-          </div>
-          <img
-            src={womanPic}
-            alt="woman-in-bondage"
-            width="700"
-            height="500"
-            className="item-image"
-          />
-        </div>
-        <div
-          className="item item-2"
-          style={{ backgroundImage: `url(${cuffsPic})` }}
+      <div className="mobile">
+        <Carousel
+          className="carousel-container"
+          autoPlay
+          animation="slide"
+          interval={5000}
+          indicators={false}
+          timeout={1000}
+          // navButtonsAlwaysVisible={true}
         >
-          <div className="logo-and-text">
-            <img className="logo" src={mic} alt="reportit-logo" />
-            {/* <img src={logo} alt="reportit-logo" width="180" height="200" /> */}
-            <h3 className="header">I WILL REMAIN SILENT NO MORE</h3>
-            <p className="content">
-              Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex ius
-              volumus propriae democritum, magna adolescens et mei, ne sit dicit
-              intellegat. At novum patrioque conceptam his, perfecto accusata
-              honestatis no qui.
-            </p>
-            <Button
-              className="reportit-button"
-              variant="contained"
-              color="primary"
-            >
-              Report It
-            </Button>
+          <div className="item item-1">
+            <div
+              className="bg-image"
+              style={{ backgroundImage: `url(${womanPic})` }}
+            />
+            <div className="logo-and-text">
+              <img className="logo" src={mic} alt="reportit-logo" />
+              <h3 className="header">YOU ARE NOT ALONE</h3>
+              <p className="content">
+                Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex
+                ius volumus propriae democritum, magna adolescens et mei, ne sit
+                dicit intellegat. At novum patrioque conceptam his, perfecto
+                accusata honestatis no qui.
+              </p>
+              <Button
+                className="reportit-button"
+                variant="contained"
+                color="primary"
+              >
+                Report It
+              </Button>
+            </div>
           </div>
-        </div>
-        <div className="item item-3">
-          <img
-            src={peoplePic}
-            alt="people"
-            width="700"
-            className="item-image"
-          />
-          <div className="logo-and-text">
-            <img className="logo" src={mic} alt="reportit-logo" />
-            {/* <img src={logo} alt="reportit-logo" width="180" height="200" /> */}
-            <h3 className="header">I WILL REMAIN SILENT NO MORE</h3>
-            <p className="content">
-              Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex ius
-              volumus propriae democritum, magna adolescens et mei, ne sit dicit
-              intellegat. At novum patrioque conceptam his, perfecto accusata
-              honestatis no qui.
-            </p>
-            <Button
-              className="reportit-button"
-              variant="contained"
-              color="primary"
-            >
-              Report It
-            </Button>
+          <div className="item item-2">
+            <div
+              className="bg-image"
+              style={{ backgroundImage: `url(${cuffsPic})` }}
+            />
+            <div className="logo-and-text">
+              <img className="logo" src={mic} alt="reportit-logo" />
+              <h3 className="header">YOU ARE NOT ALONE</h3>
+              <p className="content">
+                Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex
+                ius volumus propriae democritum, magna adolescens et mei, ne sit
+                dicit intellegat. At novum patrioque conceptam his, perfecto
+                accusata honestatis no qui.
+              </p>
+              <Button
+                className="reportit-button"
+                variant="contained"
+                color="primary"
+              >
+                Report It
+              </Button>
+            </div>
           </div>
-        </div>
-      </Carousel>
+          <div className="item item-3">
+            <div
+              className="bg-image"
+              style={{ backgroundImage: `url(${peoplePic})` }}
+            />
+            <div className="logo-and-text">
+              <img className="logo" src={mic} alt="reportit-logo" />
+              <h3 className="header">YOU ARE NOT ALONE</h3>
+              <p className="content">
+                Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex
+                ius volumus propriae democritum, magna adolescens et mei, ne sit
+                dicit intellegat. At novum patrioque conceptam his, perfecto
+                accusata honestatis no qui.
+              </p>
+              <Button
+                className="reportit-button"
+                variant="contained"
+                color="primary"
+              >
+                Report It
+              </Button>
+            </div>
+          </div>
+        </Carousel>
+      </div>
+      <div className="large">
+        <Carousel
+          className="carousel-container"
+          autoPlay
+          animation="slide"
+          interval={5000}
+          indicators={false}
+          timeout={1000}
+          // navButtonsAlwaysVisible={true}
+        >
+          <div className="item item-1">
+            <div className="logo-and-text">
+              <img className="logo" src={mic} alt="reportit-logo" />
+              <h3 className="header">YOU ARE NOT ALONE</h3>
+              <p className="content">
+                Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex
+                ius volumus propriae democritum, magna adolescens et mei, ne sit
+                dicit intellegat. At novum patrioque conceptam his, perfecto
+                accusata honestatis no qui.
+              </p>
+              <Button
+                className="reportit-button"
+                variant="contained"
+                color="primary"
+              >
+                Report It
+              </Button>
+            </div>
+            <img
+              src={womanPic}
+              alt="woman-in-bondage"
+              width="700"
+              height="500"
+              className="item-image"
+            />
+          </div>
+          <div
+            className="item item-2"
+            style={{ backgroundImage: `url(${cuffsPic})` }}
+          >
+            <div className="logo-and-text">
+              <img className="logo" src={mic} alt="reportit-logo" />
+              {/* <img src={logo} alt="reportit-logo" width="180" height="200" /> */}
+              <h3 className="header">YOU ARE NOT ALONE</h3>
+              <p className="content">
+                Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex
+                ius volumus propriae democritum, magna adolescens et mei, ne sit
+                dicit intellegat. At novum patrioque conceptam his, perfecto
+                accusata honestatis no qui.
+              </p>
+              <Button
+                className="reportit-button"
+                variant="contained"
+                color="primary"
+              >
+                Report It
+              </Button>
+            </div>
+          </div>
+          <div className="item item-3">
+            <img
+              src={peoplePic}
+              alt="people"
+              width="700"
+              className="item-image"
+            />
+            <div className="logo-and-text">
+              <img className="logo" src={mic} alt="reportit-logo" />
+              {/* <img src={logo} alt="reportit-logo" width="180" height="200" /> */}
+              <h3 className="header">YOU ARE NOT ALONE</h3>
+              <p className="content">
+                Lorem ipsum dolor sit amet, ei duo everti iuvaret accumsan. Ex
+                ius volumus propriae democritum, magna adolescens et mei, ne sit
+                dicit intellegat. At novum patrioque conceptam his, perfecto
+                accusata honestatis no qui.
+              </p>
+              <Button
+                className="reportit-button"
+                variant="contained"
+                color="primary"
+              >
+                Report It
+              </Button>
+            </div>
+          </div>
+        </Carousel>
+      </div>
       <section className="reportit-offers">
         <div className="offer offer-1">
           <div className="circle">
@@ -140,6 +224,7 @@ function Home() {
             </p>
           </div>
         </div>
+        <hr className="offer-hr" />
         <div className="offer offer-2">
           <div className="circle">
             <img src={privacyIcon} alt="privacy-icon" width="64" />
@@ -152,6 +237,7 @@ function Home() {
             </p>
           </div>
         </div>
+        <hr className="offer-hr" />
         <div className="offer offer-3">
           <div className="circle">
             <img src={timeIcon} alt="time-icon" />
@@ -172,12 +258,20 @@ function Home() {
             Africa has the highest prevalence rate of child sexual abuse around{" "}
             <strong>34.4 %</strong>
           </p>
-          <Divider className="divider" orientation="vertical" flexItem />
+          <Divider
+            className={`${screenSize > 425 ? "divider" : "div-h"}`}
+            orientation={`${screenSize > 425 ? "vertical" : "horizontal"}`}
+            flexItem
+          />
           <p className="content">
             Between 2012 and 2013, about <strong>30%</strong> of women in
             Nigeria experienced one form of domestic violence or another
           </p>
-          <Divider className="divider" orientation="vertical" flexItem />
+          <Divider
+            className={`${screenSize > 425 ? "divider" : "div-h"}`}
+            orientation={`${screenSize > 425 ? "vertical" : "horizontal"}`}
+            flexItem
+          />{" "}
           <p className="content">
             it was reported that <strong>5.0%</strong> sought help, with only{" "}
             <strong>3.5% receiving any services</strong>
@@ -261,7 +355,7 @@ function Home() {
         </div>
       </section>
       <section className="links">
-        <hr />
+        <hr className="left" />
         <hr className="right" />
         <div className="links-content">
           <Link className="footer-link" to="/about">

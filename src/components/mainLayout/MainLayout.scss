@@ -38,6 +38,10 @@ body {
   }
 }
 
+button:focus {
+  outline: none !important;
+}
+
 .content {
   line-height: 30px;
 }
@@ -50,11 +54,42 @@ body {
   margin: 0;
 }
 .custom-card {
-  background-color: #ffffff;
+  // background-color: #ffffff;
+  background-color: #f3f3f3;
   border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
   height: auto;
+}
+
+/*------------ Responsiveness -----------------*/
+
+@media screen and (max-width: 425px) {
+  .mainlayout-container {
+    .navigation {
+      .navbar {
+        .navbar-brand {
+          margin: auto;
+        }
+        .nav-pills {
+          margin: auto;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mainlayout-container {
+    .navigation {
+      .navbar {
+        .nav-pills {
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
 @import "~bootstrap/scss/bootstrap.scss";

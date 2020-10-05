@@ -8,7 +8,7 @@ import Reporting from "./pages/reporting/Reporting";
 
 function RouterMain() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route
           path="/"

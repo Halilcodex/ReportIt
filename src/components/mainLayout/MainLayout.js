@@ -4,6 +4,7 @@ import logo from "../../assets/official-logo2.png";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./MainLayout.scss";
+import { Link } from "react-router-dom";
 
 function MainLayout(props) {
   const getActive = (val) => {
@@ -25,31 +26,31 @@ function MainLayout(props) {
       <a name="top"></a>
       <div className="navigation">
         <nav className="navbar navbar-light">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img src={logo} width="100" alt="" loading="lazy" />
-          </a>
+          </Link>
           <nav className="nav nav-pills">
-            <a className={`nav-link ${getActive("/") && "active"}`} href="/">
+            <Link className={`nav-link ${getActive("/") && "active"}`} to="/">
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               className={`nav-link ${getActive("dashboard") && "active"}`}
-              href="/dashboard"
+              to="/dashboard"
             >
               Dashboard
-            </a>
-            <a
+            </Link>
+            <Link
               className={`nav-link ${getActive("reporting") && "active"}`}
-              href="/reporting"
+              to="/reporting"
             >
               Report It
-            </a>
-            <a
+            </Link>
+            <Link
               className={`nav-link ${getActive("about") && "active"}`}
-              href="/about"
+              to="/about"
             >
               About Us
-            </a>
+            </Link>
           </nav>
         </nav>
       </div>

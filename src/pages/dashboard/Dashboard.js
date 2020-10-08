@@ -1,7 +1,9 @@
 import React from "react";
-import { ResponsiveGeoMapCanvas } from "@nivo/geo";
 import { ResponsiveLine } from "@nivo/line";
 import { ResponsivePie } from "@nivo/pie";
+import { barChartData, pieChartData } from "../../utils";
+import { RadioSVGMap } from "react-svg-map";
+import Nigeria from "@svg-maps/nigeria";
 
 import { Divider } from "@material-ui/core";
 import AssessmentIcon from "@material-ui/icons/AssessmentOutlined";
@@ -10,7 +12,7 @@ import CheckIcon from "@material-ui/icons/CheckCircleOutlineOutlined";
 
 import undraw from "../../assets/about/undraw2.svg";
 import "./Dashboard.scss";
-import { barChartData, NigeiraFeatures, pieChartData } from "../../utils";
+import "react-svg-map/lib/index.css";
 
 function Dashboard() {
   return (
@@ -66,17 +68,7 @@ function Dashboard() {
         </div>
       </section>
       <section className="custom-card graph-1">
-        <ResponsiveGeoMapCanvas
-          features={NigeiraFeatures}
-          margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
-          projectionTranslation={[0.5, 0.5]}
-          projectionRotation={[0, 0, 0]}
-          fillColor="#eeeeee"
-          borderWidth={0.5}
-          borderColor="#333333"
-          enableGraticule={true}
-          graticuleLineColor="#666666"
-        />
+        <RadioSVGMap map={Nigeria} />
       </section>
       <section className="graph-2">
         <div className="bar-chart custom-card">

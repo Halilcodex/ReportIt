@@ -11,7 +11,11 @@ function MainLayout(props) {
     let ret = false;
     let pathArr = window.location.pathname.split("/");
     if (val === "/") {
-      if (window.location.pathname === "/" || window.location.pathname === "") {
+      if (
+        window.location.pathname === "/" ||
+        window.location.pathname === "" ||
+        window.location.pathname === "/reportit/"
+      ) {
         return true;
       }
     }
